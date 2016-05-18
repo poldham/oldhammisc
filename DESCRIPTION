@@ -1,0 +1,17 @@
+Package: oldhammisc
+Type: Package
+Title: Miscellaneous functions, mainly for tidying and wrangling data
+Version: 0.1.0
+Author: Paul Oldham
+Maintainer: Paul Oldham <poldham@mac.com>
+Description: My personal grab bag of miscellaneous data tidying and wrangling
+    functions mainly using dplyr, tidyr, stringr, plyr for working with patent and
+    scientific literature.
+License: MIT
+LazyData: TRUE
+RoxygenNote: 5.0.1
+Imports: dplyr,
+         magrittr,
+         stringr,
+         tidyr
+
