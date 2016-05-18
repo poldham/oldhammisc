@@ -13,6 +13,7 @@
 #' @importFrom tidyr separate
 #' @importFrom tidyr gather
 #' @importFrom magrittr %>%
+#' @export
 #' @return A dataframe
 #'
 #' @examples
