@@ -2,32 +2,29 @@
 % Please edit documentation in R/separate_gather.R
 \name{separate_gather}
 \alias{separate_gather}
-\title{Separate column values then gather them back in with tidyr}
+\title{Separate a concatenated column on a separator and gather into a new column}
 \usage{
-separate_gather(data = x, col = "", into = NULL, sep = "[^[:alnum:]]+",
-  key = NULL, new_col = "", from = NULL, na.rm = TRUE)
+separate_gather(data = x, col = "", sep = "[^[:alnum:]]+", new_col = "",
+  na.rm = TRUE)
 }
 \arguments{
 \item{data}{x = A data frame}
 
-\item{col}{A character column to separate}
+\item{col}{A character column to separate  (quoted)}
 
-\item{into}{The number of columns to separate into}
-
-\item{sep}{The separator}
-
-\item{key}{used by gather(). Only specify if required.}
+\item{sep}{The separator e.g. ";"}
 
 \item{new_col}{Name of the character column to gather the data into.}
-
-\item{from}{numeric position of columns to gather into new-col}
 
 \item{na.rm}{Logical. Should NA values be removed. Default = TRUE}
 }
 \value{
-A dataframe
+A dataframe with separated observations in new rows and a named value column.
 }
 \description{
 Combines the common task of separating multiple values in a single column into individual columns based on a separator and then gathering them back in again.
+}
+\details{
+The function uses separate_ and gather_ from tidyr. A function sep_count counts up the number of separators and +1 to calculate the number of columns to be used by separate. These are then gathered back in. The default for na.rm is set to TRUE.
 }
 
