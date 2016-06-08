@@ -1,21 +1,20 @@
-#' Select field in dataframe containing ISI and/or DOI, separate, gather and
+#' @title Select field in dataframe containing ISI and/or DOI, separate, gather and
 #' trim
 #'
-#' For working with scientific literature containing concatenated author
-#' organisation or other fields. The data.frame must contain isi or doi numbers
-#' or something similar for the function to work
+#' @description For working with scientific literature containing concatenated
+#'   author, country, organisation or other fields. The data.frame must contain
+#'   isi or doi numbers or something similar for the function to work.
 #'
 #' @param data A data frame containing the target concatenated field and isi or
 #'   doi
 #' @param x A concatenated character column (authors, organisations etc)
-#' @param sep a separator (normally ";)
-#'
+#' @param sep a separator (normally `;`)
+#' @details Prints the number of separated columns for information part way through the
+#'   function.
 #' @return a data frame containing the target (whitespace trimmed), isi and doi
 #'   fields
 #' @export
-#' @details prints the number of separated columns for information part way
-#'   through the function. See sep_count()
-#' @examples process_isi(df, x = "authors", sep = ";) not run
+#' @examples process_isi(df, x = "authors", sep = ";") \not run
 process_isi <- function(data, x = "", sep = ""){
   data <- dplyr::select_(data, x, "isi", "doi") # must be quoted for select_
   n <- sep_count(data, x, sep)

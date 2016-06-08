@@ -13,19 +13,22 @@ doi}
 
 \item{x}{A concatenated character column (authors, organisations etc)}
 
-\item{sep}{a separator (normally ";)}
+\item{sep}{a separator (normally `;`)}
 }
 \value{
 a data frame containing the target (whitespace trimmed), isi and doi
   fields
 }
 \description{
-For working with scientific literature containing concatenated author
-organisation or other fields. The data.frame must contain isi or doi numbers
-or something similar for the function to work
+For working with scientific literature containing concatenated
+  author, country, organisation or other fields. The data.frame must contain
+  isi or doi numbers or something similar for the function to work.
 }
 \details{
-prints the number of separated columns for information part way
-  through the function. See sep_count()
+Prints the number of separated columns for information part way through the
+  function.
+}
+\examples{
+process_isi(df, x = "authors", sep = ";") \\not run
 }
 

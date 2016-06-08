@@ -10,11 +10,11 @@ separate_gather(data = x, col = "", sep = "[^[:alnum:]]+", new_col = "",
 \arguments{
 \item{data}{x = A data frame}
 
-\item{col}{A character column to separate  (quoted)}
+\item{col}{A concatenated character column to separate using sep (quoted)}
 
-\item{sep}{The separator e.g. ";"}
+\item{sep}{The separator e.g. `;`}
 
-\item{new_col}{Name of the character column to gather the data into.}
+\item{new_col}{Name of the character column to gather the data into (quoted).}
 
 \item{na.rm}{Logical. Should NA values be removed. Default = TRUE}
 }
@@ -26,5 +26,8 @@ Combines the common task of separating multiple values in a single column into i
 }
 \details{
 The function uses separate_ and gather_ from tidyr. A function sep_count counts up the number of separators and +1 to calculate the number of columns to be used by separate. These are then gathered back in. The default for na.rm is set to TRUE.
+}
+\examples{
+separate_gather(data = data, col = "authors", sep = ";", new_col = "authors_split", na.rm = TRUE)
 }
 
