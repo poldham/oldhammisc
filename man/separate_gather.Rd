@@ -28,6 +28,6 @@ Combines the common task of separating multiple values in a single column into i
 The function uses separate_ and gather_ from tidyr. A function sep_count counts up the number of separators and +1 to calculate the number of columns to be used by separate. These are then gathered back in. The default for na.rm is set to TRUE.
 }
 \examples{
-separate_gather(data = data, col = "authors", sep = ";", new_col = "authors_split", na.rm = TRUE)
+\dontrun{separate_gather(data = data, col = "authors", sep = ";", new_col = "authors_split", na.rm = TRUE)}
 }
 

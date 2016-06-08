@@ -20,7 +20,7 @@
 #' @importFrom rorcid orcid_doi
 #' @importFrom dplyr bind_rows
 #' @importFrom magrittr %>%
-#' @examples orcid_df(dois) \not run
+#' @examples \dontrun{orcid_df(dois)}
 orcid_df <- function(dois = NULL, start = NULL, rows = NULL, fuzzy = FALSE){
   data <- rorcid::orcid_doi(dois=dois, start = start, rows = rows, fuzzy=FALSE)
   lapply(data, "[[", 2) %>%

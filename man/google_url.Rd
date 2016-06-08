@@ -24,6 +24,6 @@ from this SO question.
   \url{http://stackoverflow.com/questions/32889136/how-to-get-google-search-results}
 }
 \examples{
-google_url(pizza)
+\dontrun{google_url(pizza)}
 }
 

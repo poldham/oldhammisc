@@ -13,5 +13,9 @@ RoxygenNote: 5.0.1
 Imports: dplyr,
          magrittr,
          stringr,
-         tidyr
+         tidyr,
+         XML,
+         RCurl,
+         rorcid,
+         rcrossref
 

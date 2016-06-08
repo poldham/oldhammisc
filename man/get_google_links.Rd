@@ -25,6 +25,6 @@ from this SO question.
   \url{http://stackoverflow.com/questions/32889136/how-to-get-google-search-results}
 }
 \examples{
-get_google_links(url) \\not run
+\dontrun{get_google_links(url)}
 }
 

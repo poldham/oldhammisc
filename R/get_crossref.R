@@ -4,8 +4,9 @@
 #'
 #' @return A data frame
 #' @export
+#' @importFrom rcrossref cr_works
 #' @details See the ropensci rcrossref package \url{https://github.com/ropensci/rcrossref}
-#' @examples get_crossref(dois) \not run
+#' @examples \dontrun{get_crossref(dois)}
 get_crossref <- function(dois){
   data <- cr_works(dois = dois)
   data <- data$data # returns a data frame dropping other results

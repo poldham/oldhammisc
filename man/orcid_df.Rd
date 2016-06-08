@@ -34,6 +34,6 @@ A convenience wrapper for the rorcid_doi function from rorcid. See
   returns a data.frame.
 }
 \examples{
-orcid_df(dois) \\not run
+\dontrun{orcid_df(dois)}
 }
 

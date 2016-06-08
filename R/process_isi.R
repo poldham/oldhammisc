@@ -14,7 +14,7 @@
 #' @return a data frame containing the target (whitespace trimmed), isi and doi
 #'   fields
 #' @export
-#' @examples process_isi(df, x = "authors", sep = ";") \not run
+#' @examples \dontrun{process_isi(df, x = "authors", sep = ";")}
 process_isi <- function(data, x = "", sep = ""){
   data <- dplyr::select_(data, x, "isi", "doi") # must be quoted for select_
   n <- sep_count(data, x, sep)

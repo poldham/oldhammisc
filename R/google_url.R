@@ -9,7 +9,7 @@
 #' @return a URL
 #' @export
 #'
-#' @examples google_url(pizza)
+#' @examples \dontrun{google_url(pizza)}
 #' @examples google_url("craig venter")
 google_url <- function(search_term, domain = '.co.uk', quotes=TRUE)
 {

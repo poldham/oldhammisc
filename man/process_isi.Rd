@@ -29,6 +29,6 @@ Prints the number of separated columns for information part way through the
   function.
 }
 \examples{
-process_isi(df, x = "authors", sep = ";") \\not run
+\dontrun{process_isi(df, x = "authors", sep = ";")}
 }
 

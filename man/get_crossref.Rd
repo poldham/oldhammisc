@@ -19,6 +19,6 @@ A simple wrapper for rcrossref cr_works that returns a data.frame.
 See the ropensci rcrossref package \url{https://github.com/ropensci/rcrossref}
 }
 \examples{
-get_crossref(dois) \\not run
+\dontrun{get_crossref(dois)}
 }
 
