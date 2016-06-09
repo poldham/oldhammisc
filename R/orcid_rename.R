@@ -49,7 +49,6 @@ orcid_rename <- function(data){dplyr::rename_(data,
   contact_details_address_country = "`contact-details.address.country`",
   personal_details_given_names = "`personal-details.given-names`",
   personal_details_family_name = "`personal-details.family-name`",
-  contact_details_address = "`contact-details.address`",
-  personal_details = `personal-details`)
+  contact_details_address = "`contact-details.address`")
   }
 
