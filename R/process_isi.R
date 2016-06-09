@@ -23,3 +23,5 @@ process_isi <- function(data, x = "", sep = ""){
   data$x <- data$x %>% # not clear that this is working, try select, trim, paste0
     stringr::str_trim(side = "both")
 }
+
+# check that this function version on separate gather is the latest version.
