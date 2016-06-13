@@ -10,7 +10,8 @@ Description: My personal grab bag of miscellaneous data tidying and wrangling
 License: MIT
 LazyData: TRUE
 RoxygenNote: 5.0.1
-Imports: dplyr,
+Imports: plyr,
+         dplyr,
          magrittr,
          stringr,
          tidyr,
