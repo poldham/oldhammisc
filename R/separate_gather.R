@@ -13,7 +13,7 @@
 #' @export
 #' @return A dataframe with separated observations in new rows and a named value column.
 #'
-#' @examples \dontrun{separate_gather(data, col = "authors", sep = ";", new_col = "authors_split", na.rm = TRUE)}
+#' @examples \dontrun{separate_gather(data, "authors", sep = ";", new_col = "auth_split", na.rm = TRUE)}
 separate_gather <- function(data, col = "", sep = "[^[:alnum:]]+", new_col = "", na.rm = TRUE){
   sepcount <- stringr::str_count(data[[col]], pattern = sep)
   n <- as.integer(max(sepcount)+1)

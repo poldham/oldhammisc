@@ -18,7 +18,6 @@
 #'   returns a data.frame.
 #' @export
 #' @importFrom rorcid orcid_doi
-#' @importFrom dplyr bind_rows
 #' @importFrom magrittr %>%
 #' @examples \dontrun{orcid_df(dois)}
 orcid_df <- function(dois = NULL, start = NULL, rows = NULL, fuzzy = FALSE){

@@ -13,12 +13,12 @@ get_crossref(dois)
 A data frame
 }
 \description{
-A simple wrapper for rcrossref cr_works that returns a data.frame.
-}
-\details{
-See the ropensci rcrossref package \url{https://github.com/ropensci/rcrossref}
+A simple wrapper for rcrossref \code{cr_works} that returns a data.frame dropping other data. Note that this wrapper does not include the additional arguments available for \code{cr_works}.
 }
 \examples{
 \dontrun{get_crossref(dois)}
+}
+\references{
+\url{https://github.com/ropensci/rcrossref}
 }
 
