@@ -28,6 +28,7 @@
 #' @references \url{https://github.com/ropensci/rcrossref}
 #' @examples \dontrun{crossref_authors(df$author, source = source_df, .id = source_df$DOI)}
 crossref_authors <- function(data, source, .id = id){
+  names(data) <- source$DOI
   data <- dplyr::bind_rows(Filter(is.data.frame, data), .id = "DOI")
   data <- dplyr::left_join(data, source, by = "DOI")
   data <- tidyr::unite(data, full_name, c(family, given), sep = ", ", remove = FALSE)
