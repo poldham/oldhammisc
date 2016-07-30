@@ -6,6 +6,7 @@
 #' @details A DOI (quoted) column must be present in the source data.frame.
 #' @export
 #' @importFrom plyr ldply
+#' @importFrom dplyr left_join
 #' @references \url{https://github.com/ropensci/rcrossref}
 #' @examples \dontrun{links(col, source)}
 links <- function(col, source){
