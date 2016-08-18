@@ -1,4 +1,4 @@
-#' Separate a concatenated column on a separator and gather into a new column
+#' Depracated following Tidyr update, use tidyr::separate_rows instead.
 #'
 #' Combines the common task of separating multiple values in a single column into individual columns based on a separator and then gathering them back in again.
 #' @details The function uses separate_ and gather_ from tidyr. A function sep_count counts up the number of separators and +1 to calculate the number of columns to be used by separate. These are then gathered back in. The default for na.rm is set to TRUE.

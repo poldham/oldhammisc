@@ -2,7 +2,7 @@
 % Please edit documentation in R/separate_gather.R
 \name{separate_gather}
 \alias{separate_gather}
-\title{Separate a concatenated column on a separator and gather into a new column}
+\title{Depracated following Tidyr update, use tidyr::separate_rows instead.}
 \usage{
 separate_gather(data, col = "", sep = "[^[:alnum:]]+", new_col = "",
   na.rm = TRUE)
