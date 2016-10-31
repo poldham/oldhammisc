@@ -27,6 +27,7 @@
 #' @importFrom tidyr unite
 #' @references \url{https://github.com/ropensci/rcrossref}
 #' @examples \dontrun{crossref_authors(df$author, source = source_df, .id = source_df$DOI)}
+#' @example \dontrun(pizza_authors <- crossref_authors(pizza_crossref_df$author, pizza_crossref_df, .id = pizza_crossref_df$DOI) %>% print())
 crossref_authors <- function(data, source, .id = id){
   names(data) <- source$DOI
   data <- dplyr::bind_rows(Filter(is.data.frame, data), .id = "DOI")
@@ -34,3 +35,4 @@ crossref_authors <- function(data, source, .id = id){
   data <- tidyr::unite(data, full_name, c(family, given), sep = ", ", remove = FALSE)
   }
 
+#if the author field does not contain a list with family and given then the function will throw a strange error. Try this with a raw bahamas query. So, create a warning message for this in the function.

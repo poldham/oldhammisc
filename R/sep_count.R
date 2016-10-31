@@ -14,3 +14,5 @@ sep_count <- function(data, col = "", sep = "[^[:alnum:]]+") {
   n <- as.integer(max(sepcount)+1)
   print(n)
 }
+
+#include an actual example.

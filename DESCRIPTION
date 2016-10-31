@@ -20,4 +20,4 @@ Imports: plyr,
          RCurl,
          rorcid,
          rcrossref
-
+Suggests: testthat

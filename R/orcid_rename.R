@@ -45,10 +45,8 @@ orcid_rename <- function(data){dplyr::rename_(data,
   biography_visibility = "biography.visibility",
   personal_details_credit_name_value = "`personal-details.credit-name.value`",
   personal_details_credit_name_visibility = "`personal-details.credit-name.visibility`",
+  # personal_details_family_name = "`personal-details.family-name`", #not found message
   external_identifiers = "`external-identifiers`",
-  contact_details_address_country = "`contact-details.address.country`",
-  personal_details_given_names = "`personal-details.given-names`",
-  personal_details_family_name = "`personal-details.family-name`",
   contact_details_address = "`contact-details.address`")
   }
 
