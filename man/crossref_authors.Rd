@@ -39,7 +39,7 @@ A data.frame of results from crossref (see \code{get_crossref} )
   must be present for the function to work.
 }
 \examples{
-\dontrun{crossref_authors(df$author, source = source_df, .id = source_df$DOI)}
+\dontrun{pizza_authors <- crossref_authors(pizza_crossref_df$author, pizza_crossref_df, .id = pizza_crossref_df$DOI)}
 }
 \references{
 \url{https://github.com/ropensci/rcrossref}

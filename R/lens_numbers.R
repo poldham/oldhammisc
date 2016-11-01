@@ -11,7 +11,6 @@
 #'   below.
 #' @return a data.frame
 #' @export
-#'
 #' @examples \dontrun{df <- lens_numbers(df, "publication_number)}
 #' @examples \dontrun{df$new_col <- lens_numbers(df, "publication_number")}
 lens_numbers <- function(df, col){

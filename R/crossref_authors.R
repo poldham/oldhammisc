@@ -26,8 +26,7 @@
 #' @importFrom dplyr left_join
 #' @importFrom tidyr unite
 #' @references \url{https://github.com/ropensci/rcrossref}
-#' @examples \dontrun{crossref_authors(df$author, source = source_df, .id = source_df$DOI)}
-#' @example \dontrun(pizza_authors <- crossref_authors(pizza_crossref_df$author, pizza_crossref_df, .id = pizza_crossref_df$DOI) %>% print())
+#' @examples \dontrun{pizza_authors <- crossref_authors(pizza_crossref_df$author, pizza_crossref_df, .id = pizza_crossref_df$DOI)}
 crossref_authors <- function(data, source, .id = id){
   names(data) <- source$DOI
   data <- dplyr::bind_rows(Filter(is.data.frame, data), .id = "DOI")
