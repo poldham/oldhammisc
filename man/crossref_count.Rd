@@ -2,6 +2,7 @@
 % Please edit documentation in R/crossref_count.R, R/crossref_count_test.R
 \name{crossref_count}
 \alias{crossref_count}
+\alias{crossref_count}
 \title{Count results for query using rcrossref}
 \usage{
 crossref_count(query)
@@ -27,4 +28,3 @@ A simple wrapper for rcrossref::cr_works() that extracts the total number of res
 \dontrun{pizza <- crossref_count(query = "pizza")}
 \dontrun{pizza <- crossref_count(query = "pizza")}
 }
-

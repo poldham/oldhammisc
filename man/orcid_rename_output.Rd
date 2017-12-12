@@ -12,4 +12,3 @@ orcid_rename_output
 orcid_sample with renamed columns using orcid_rename.
 }
 \keyword{datasets}
-

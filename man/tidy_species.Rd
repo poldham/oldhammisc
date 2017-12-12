@@ -4,7 +4,7 @@
 \alias{tidy_species}
 \title{Tidy up species names}
 \usage{
-tidy_species(file)
+tidy_species(file, col)
 }
 \arguments{
 \item{file}{A csv file containing species names in a column called Species}
@@ -18,4 +18,3 @@ Read in a list of species and then tidy up by converting to lower case and then 
 \examples{
 \dontrun{df <- tidy_species(file)}
 }
-

@@ -26,4 +26,3 @@ A DOI (quoted) column must be present in the source data.frame.
 \references{
 \url{https://github.com/ropensci/rcrossref}
 }
-

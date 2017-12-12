@@ -7,10 +7,10 @@
 #' @importFrom Hmisc capitalize
 #' @importFrom dplyr %>%
 #' @examples \dontrun{df <- tidy_species(file)}
-tidy_species <- function(file) {
+tidy_species <- function(file, col) {
   species_list <- (read.csv(file, stringsAsFactors = FALSE)
   )
-  species_list$Species %>%
+  species_list$col %>%
     tolower() %>%
     capitalize() %>%
     print()

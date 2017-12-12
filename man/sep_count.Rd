@@ -25,4 +25,3 @@ Calculates the maximum number of separators in a column (typically `;`). When di
 \examples{
 \dontrun{sep_count(data, col = "authors", sep = ";")}
 }
-

@@ -1,4 +1,4 @@
-#' @title Select field in dataframe containing ISI and/or DOI, separate, gather and
+#' @title (depracated - use tidyr::separate_rows). Select field in dataframe containing ISI and/or DOI, separate, gather and
 #' trim
 #'
 #' @description For working with scientific literature containing concatenated

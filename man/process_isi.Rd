@@ -2,7 +2,7 @@
 % Please edit documentation in R/process_isi.R
 \name{process_isi}
 \alias{process_isi}
-\title{Select field in dataframe containing ISI and/or DOI, separate, gather and
+\title{(depracated - use tidyr::separate_rows). Select field in dataframe containing ISI and/or DOI, separate, gather and
 trim}
 \usage{
 process_isi(data, x = "", sep = "")
@@ -31,4 +31,3 @@ Prints the number of separated columns for information part way through the
 \examples{
 \dontrun{process_isi(df, x = "authors", sep = ";")}
 }
-

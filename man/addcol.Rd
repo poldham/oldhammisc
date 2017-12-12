@@ -24,4 +24,3 @@ Use to add an identifying column to a data frame. For example,
 \examples{
 \dontrun{df <- addcol(data, "species", "myrtus communis") }
 }
-

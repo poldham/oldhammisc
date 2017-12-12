@@ -21,4 +21,3 @@ Start of a function to rename fields generated from rcrossref \code{cr_works} wi
 \references{
 \url{https://github.com/ropensci/rcrossref}
 }
-

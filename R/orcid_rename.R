@@ -8,7 +8,8 @@
 #' @export
 #' @importFrom dplyr rename
 #' @examples \dontrun{orcid_rename(data)}
-orcid_rename <- function(data){dplyr::rename_(data,
+orcid_rename <- function(data){
+  dplyr::rename_(data,
   relevancy_score_value = "`relevancy-score.value`",
   orcid_id = "`orcid-id`",
   orcid_deprecated = "`orcid-deprecated`",
@@ -30,7 +31,7 @@ orcid_rename <- function(data){dplyr::rename_(data,
   personal_details_given_names_visibility = "`personal-details.given-names.visibility`",
   personal_details_family_name_value = "`personal-details.family-name.value`",
   personal_details_family_name_visibility = "`personal-details.family-name.visibility`",
-  external_identifiers_external_identifier= "`external-identifiers.external-identifier`",
+  external_identifiers_external_identifier = "`external-identifiers.external-identifier`",
   external_identifiers_visibility = "`external-identifiers.visibility`",
   personal_details_other_names_other_name = "`personal-details.other-names.other-name`",
   personal_details_other_names_visibility = "`personal-details.other-names.visibility`",

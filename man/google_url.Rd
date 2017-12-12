@@ -25,5 +25,5 @@ from this SO question.
 }
 \examples{
 \dontrun{google_url(pizza)}
+google_url("pizza")
 }
-

@@ -27,4 +27,3 @@ from this SO question.
 \examples{
 \dontrun{get_google_links(url)}
 }
-

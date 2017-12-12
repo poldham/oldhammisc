@@ -21,4 +21,3 @@ This converts hyphens and stops in column names for results from
 \examples{
 \dontrun{orcid_rename(data)}
 }
-

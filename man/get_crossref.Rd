@@ -21,4 +21,3 @@ A simple wrapper for rcrossref \code{cr_works} that returns a data.frame droppin
 \references{
 \url{https://github.com/ropensci/rcrossref}
 }
-

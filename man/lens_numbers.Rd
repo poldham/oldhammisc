@@ -26,7 +26,3 @@ Note that the Lens is planning a facility that will allow sets of
   prudent to create a new column with the edited number as in example 2
   below.
 }
-\examples{
-\dontrun{df$new_col <- lens_numbers(df, "publication_number")}
-}
-

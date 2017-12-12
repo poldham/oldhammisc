@@ -10,11 +10,10 @@
 #' @export
 #'
 #' @examples \dontrun{google_url(pizza)}
-#' @examples google_url("craig venter")
+#' @examples google_url("pizza")
 google_url <- function(search_term, domain = '.co.uk', quotes=TRUE)
 {
   search_term <- gsub(' ', '%20', search_term)
-  if(quotes) search_term <- paste('%22', search_term, '%22', sep='')
-  get_google_url <- paste('http://www.google', domain, '/search?q=',
-    search_term, sep='')
+  if (quotes) search_term <- paste('%22', search_term, '%22', sep = '')
+  get_google_url <- paste('http://www.google', domain, '/search?q=', search_term, sep = '')
 }

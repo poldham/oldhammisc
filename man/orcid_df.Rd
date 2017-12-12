@@ -36,4 +36,3 @@ A convenience wrapper for the rorcid_doi function from rorcid. See
 \examples{
 \dontrun{orcid_df(dois)}
 }
-

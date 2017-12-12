@@ -11,10 +11,10 @@
 #'   below.
 #' @return a data.frame
 #' @export
-#' @examples \dontrun{df <- lens_numbers(df, "publication_number)}
-#' @examples \dontrun{df$new_col <- lens_numbers(df, "publication_number")}
+#' @examples \dontrun{df <- lens_numbers(df, "publication_number)
+#' df$new_col <- lens_numbers(df, "publication_number")}
 lens_numbers <- function(df, col){
-  df[[col]] <- gsub(" ","", df[[col]])  # remove blank spaces
-  df[[col]] <- gsub("/","", df[[col]]) # remove "/"
+  df[[col]] <- gsub(" ","", df[[col]])
+  df[[col]] <- gsub("/","", df[[col]])
   return(df)
 }

@@ -11,6 +11,6 @@
 #'
 #' @examples \dontrun{df <- addcol(data, "species", "myrtus communis") }
 addcol <- function(data, col, value){
-  data[col] <- rep(value, 1,nrow(data))
-  return(data)
+  data[col] <- rep(value, 1, nrow(data))
+  data
 }

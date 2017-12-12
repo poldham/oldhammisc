@@ -44,4 +44,3 @@ A data.frame of results from crossref (see \code{get_crossref} )
 \references{
 \url{https://github.com/ropensci/rcrossref}
 }
-

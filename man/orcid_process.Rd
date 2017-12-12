@@ -18,4 +18,3 @@ Turn raw results from orcid into a data frame
 \details{
 Note dependency on oldhammisc::orcid_rename
 }
-
