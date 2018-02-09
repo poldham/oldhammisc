@@ -7,7 +7,6 @@
 #' @importFrom dplyr %>%
 #' @importFrom dplyr select
 #' @importFrom dplyr filter
-#' @importFrom rplos searchplos
 #' @examples \dontrun{drones <- plos_records(drones)}
 #' @examples \dontrun{synbio <- c('"synthetic biology"', '"synthetic genomics"', '"synthetic genome"', '"synthetic genomes"')
 #' synbio <- plos_records(synbio)}

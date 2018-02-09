@@ -9,6 +9,6 @@
 five_texts
 }
 \description{
-A dara frame with two columns, doc_id and text for five patent full texts downloaded from derwent innovation.
+A data frame with two columns, doc_id and text for five patent full texts downloaded from derwent innovation.
 }
 \keyword{datasets}

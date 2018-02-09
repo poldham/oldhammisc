@@ -3,10 +3,6 @@
 #' @details The function fetches the geoname daily dump page consisting of a table with "Name", "Last Modified", "Size" and "Description". The Name field is parsed to create a file_name and file_type column. The files are a mix of individual country files (e.g. AD.zip) and other files (e.g. allCountries.zip, admin2Codes.txt etc.). To facilitate country matches the file name is parsed into iso2c for two letter country codes and other
 #' @return data.frame
 #' @export
-#' @importFrom xml2 read_html
-#' @importFrom rvest html_nodes
-#' @importFrom rvest html_text
-#' @importFrom tibble tibble
 #' @importFrom dplyr filter
 #' @importFrom dplyr rename
 #' @importFrom magrittr "%>%"

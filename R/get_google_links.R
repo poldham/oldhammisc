@@ -16,7 +16,7 @@
 #'   \url{http://stackoverflow.com/questions/32889136/how-to-get-google-search-results}
 #' @examples \dontrun{get_google_links(url)}
 get_google_links <- function(url) {
-  doc <- getURL(url, httpheader = c("User-Agent" = "R
+  doc <- RCurl::getURL(url, httpheader = c("User-Agent" = "R
     (2.10.0)"))
   html <- htmlTreeParse(doc, useInternalNodes = TRUE, error=function
     (...){})

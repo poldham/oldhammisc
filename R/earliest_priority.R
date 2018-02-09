@@ -7,7 +7,6 @@
 #' @importFrom dplyr arrange
 #' @importFrom tidyr unnest
 #' @importFrom dplyr %>%
-#' @importFrom purrr map_df
 #' @return data.frame
 #' @export
 #'

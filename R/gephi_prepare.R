@@ -6,7 +6,6 @@
 #'
 #' @return A data.frame
 #' @export
-#' @importFrom readr read_csv
 #' @importFrom dplyr select_
 #' @importFrom stringr str_trim
 #' @examples
